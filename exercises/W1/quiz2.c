@@ -9,7 +9,7 @@ int main()
         return(m);
     }
     
-    printf("%u\n", get_month(apr));
+    printf("%u\n", get_month(3));
 
     return 0;
 }

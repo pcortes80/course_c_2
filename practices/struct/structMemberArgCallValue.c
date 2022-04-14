@@ -17,7 +17,7 @@ void print(char department_name[], int salary, int ssn){
 int main() {
 
     struct Employee e1 = {"HR", 1000 , 10};
-    /* call thefunction "print" */
+    /* call the function "print" */
     print(e1.department_name,e1.salary, e1.ssn);
     return 0;
 }
