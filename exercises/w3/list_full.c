@@ -8,10 +8,15 @@
 #include<ctype.h>
 
 /* Define struct list as typef */
-typedef struct list{ int data; struct list *next;} list;
+typedef struct list{ 
+    int data; 
+    struct list *next;
+} list;
 
 /*Define the function "is_empty" */
-int is_empty(const list *l){ return (l == NULL);}
+int is_empty(const list *l){ 
+    return (l == NULL);
+}
 
 /* Define function "create_list" */
 list* create_list(int d)
@@ -38,7 +43,7 @@ list* array_to_list(int d[], int size)
     for(i = 1; i < size; i++)
     {
         head = add_to_front(d[i], head);
-    }
+     }
     return head;
 }
 
@@ -60,7 +65,6 @@ int main()
     list list_of_int; //create the list named "list_of_int"
     list *head = NULL; //define the head is NULL
     int data[6] = {2,3,5,7,8,9}; //define the array
-    scanf("%d", &press)
     head = array_to_list(data, 6); //now head
     print_list(head, "data[6] made into a 6-element list");
     printf("\n\n");

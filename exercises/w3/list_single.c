@@ -7,18 +7,22 @@
 #include<stdlib.h>
 #include<ctype.h>
 
-/* Define struct list as typef */
-typedef struct list{ int data; struct list *next;} list;
+/* Define struct list as typedef */
+typedef struct list{ 
+    int data; 
+    struct list *next;
+} list;
 
-/*Define the function "is_empy" */
-int is_empty(const list *l){ return (l == NULL);}
-
+/*Define the function "is_empty" */
+int is_empty(const list *l){ 
+    return (l == NULL);
+}
 
 /*Define the function "print_list" */
 void print_list(list *h, char *title)
 {
   printf("%s\n", title);
-  // it iterates intill the end of the list
+  // it iterates untill the end of the list
   while(h != NULL){
     printf("%d :", h -> data);
     h = h -> next;
